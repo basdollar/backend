@@ -1,0 +1,204 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "dollar",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "capture",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "value",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Decimal.D256",
+						"name": "",
+						"type": "tuple"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "pair",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "reserve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "setup",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"capture()": {
+					"notice": "Trades/Liquidity: (1) Initializes reserve and blockTimestampLast (can calculate a price)                  (2) Has non-zero cumulative prices     * Steps: (1) Captures a reference blockTimestampLast       (2) First reported value"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/oracle/Oracle.sol": "Oracle"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
+				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+			]
+		},
+		"@pancakeswap/lib/contracts/libraries/Babylonian.sol": {
+			"keccak256": "0xe20fc48e3575b4a2932e5d2dd53b6742e1ca96f652bd41038cb89d7f5d49a096",
+			"urls": [
+				"bzz-raw://6ba298d8e592d39960eabc2328b7d4a01ad6cf8b06366adc3ef0133d3b196a9f",
+				"dweb:/ipfs/QmQgrNaHssJ8XVsPUCMHpyYRFLbBqNrumaoFgXHWdDiTyy"
+			]
+		},
+		"@pancakeswap/lib/contracts/libraries/FixedPoint.sol": {
+			"keccak256": "0x278547b6f6623cf6c44e32d18fac5e5119473d59759478247ce75ba58fe58179",
+			"urls": [
+				"bzz-raw://f4f605b46ed3da0582436ec0d15ae371a38e6b416bba36bb99959ded93b64234",
+				"dweb:/ipfs/QmX7D5JbqDfT2XoXtx84G8fV3bBnq6o1iNQBfuSnpeyxg1"
+			]
+		},
+		"@pancakeswap/v2-core/contracts/interfaces/IPancakeswapFactory.sol": {
+			"keccak256": "0x9600a3fe0461b6f9bbc6733c792ce2a7e18c7a29d723e0581bdc0dc7b2ec0f0c",
+			"urls": [
+				"bzz-raw://69050f6d0f3ad9d4b7957997e13cad26b94a13a19cf9b694704b91d0ae65c02d",
+				"dweb:/ipfs/QmTXq4cDYK6L97htxyLguRsp2oBcfwfVgPTtN3jRW4dqaX"
+			]
+		},
+		"@pancakeswap/v2-core/contracts/interfaces/IPancakeswapPair.sol": {
+			"keccak256": "0x4dbc447aacc180c56ca52006cf0a56de7d59045eb5b574f64729688e4756cdc9",
+			"urls": [
+				"bzz-raw://8a350df7476270c324f24d8e80ad751486a1d41adb7b8ccde6d2c809cd018825",
+				"dweb:/ipfs/QmSxGcu5hqqV7DSCiBaRo7V2QC6L5sxZ2f1egT3i6BMfXs"
+			]
+		},
+		"localhost/contracts/Constants.sol": {
+			"keccak256": "0x65101d85b9e360841a5bab4eebabfd20cabd70737a88d17e48bea157802f7db5",
+			"urls": [
+				"bzz-raw://7d366d05e72560711844af91e280e6bcceb63bfa4d63d80399e322ed2e53aeb7",
+				"dweb:/ipfs/QmZq8AQ62GzxhxrEGzoYThYVyVURp2ncXgkpRerWxnXwBh"
+			]
+		},
+		"localhost/contracts/external/Decimal.sol": {
+			"keccak256": "0x55f2c3ea7960448502924b1ddb33db82f850021ef54d2dd40a4c9b9e82ed1058",
+			"urls": [
+				"bzz-raw://ae89c47c44ae1f6f1c6947bb9b66f1eb4c39786f7b83ed4d1ea3acdbc88a0123",
+				"dweb:/ipfs/QmSxmQk2mCuNuo6DDpdCjeftxsjfUJipMRHR3h1hpcNFam"
+			]
+		},
+		"localhost/contracts/external/PancakeswapLibrary.sol": {
+			"keccak256": "0x2a789415ec9fcec8ae9d31a4b66ec13d8f3971d79a1c4425a451eb81f7281888",
+			"urls": [
+				"bzz-raw://9bee75feb36504a769cc159afab944e0fc030977a9387135b3a8f10f442a8d66",
+				"dweb:/ipfs/QmUKm6jpn3JWaJujJQEPV4BH7TCt5cHtzPe3r97Cc8uTQj"
+			]
+		},
+		"localhost/contracts/external/PancakeswapOracleLibrary.sol": {
+			"keccak256": "0x757261e75715fe0915f5ede40fe90db7077ad471252e423c770f19528cf3bcfd",
+			"urls": [
+				"bzz-raw://315f2dcc11c24721ebccddb640b71ea73ad6a92bee233f82f7e597246b063a7c",
+				"dweb:/ipfs/QmTTd2gyrNKwtYcPivyT8BqtfPwV5aYEFNTcFR4zPEn2EM"
+			]
+		},
+		"localhost/contracts/external/Require.sol": {
+			"keccak256": "0x3b8edcc166414f1c408972bf8130893a601a29eb87454621b187e754a8372922",
+			"urls": [
+				"bzz-raw://3a900707d5229254a1f021438d32adf87cf37a251cc0eea926e24cccad3ecf14",
+				"dweb:/ipfs/QmWda2qiJEUnjftpqhxR1cZPJXqjkHJwFhLpXurod3uwnW"
+			]
+		},
+		"localhost/contracts/oracle/IBUSD.sol": {
+			"keccak256": "0xf90cf9b4edfcf8fb7cb6a0fd433c2750488ece9ad6140352b99152b5db472f9e",
+			"urls": [
+				"bzz-raw://fea61d930df5d4a485263dbca5a466facad4f38c2e4000fb81b2a1bc1c591259",
+				"dweb:/ipfs/QmXFuVcGYyhXUyMMhqMBwossAUUv5e76nxMXpYPjKCcjdK"
+			]
+		},
+		"localhost/contracts/oracle/IOracle.sol": {
+			"keccak256": "0xb83b9cbc339a074de1f469936b366f4c71e20c3589fee2c5f61122e5241c8088",
+			"urls": [
+				"bzz-raw://fd231ac715973789b29a8174f6f652ec731e88505bf2c08859bdaec5e59b3608",
+				"dweb:/ipfs/QmU7RedrumfwPY7wVspeCZXFwUYnjFvBZdDJdSkX4ev4gu"
+			]
+		},
+		"localhost/contracts/oracle/Oracle.sol": {
+			"keccak256": "0x5358d05eb8c8a5c5f2722aadf6a1359f295560b8d6f48ba6a256a7bc1e5ee749",
+			"urls": [
+				"bzz-raw://7e772c23b96459588978e75dc015b560c3f252b6e9d760e6d569bf1fc56a9370",
+				"dweb:/ipfs/QmNjdvMcKmsbnyq8m7nQnLkRNx5PfyuYgcRFujmg1KmqvZ"
+			]
+		}
+	},
+	"version": 1
+}

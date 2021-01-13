@@ -1,0 +1,38 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {},
+			"notice": "Utility library of inline functions on addresses * Source https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-solidity/v2.1.3/contracts/utils/Address.sol This contract is copied here and renamed from the original to avoid clashes in the compiled artifacts when the user imports a zos-lib contract (that transitively causes this contract to be compiled and added to the build/artifacts folder) as well as the vanilla Address implementation from an openzeppelin version."
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/oracle/poolflat.sol": "OpenZeppelinUpgradesAddress"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/oracle/poolflat.sol": {
+			"keccak256": "0x678b99a3e608b9a9b0129a37387480eac6d98bfe403b62e84e9fa6ded8f5b519",
+			"urls": [
+				"bzz-raw://05effd17fe112cc4d749459d542dc8a498ad8daefe4532b66f57826933d5d290",
+				"dweb:/ipfs/QmaHUPJf3NXNnXGShNpGDNTzMBjXRrEkgNw7mLGvvZfjzF"
+			]
+		}
+	},
+	"version": 1
+}

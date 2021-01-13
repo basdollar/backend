@@ -1,0 +1,55 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50604c80601d6000396000f3fe6080604052600080fdfea365627a7a7231582083707c6288080c28666f4b897c2b9052092ce70b731f477b9be851a69538855e6c6578706572696d656e74616cf564736f6c63430005110040",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4C DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG3 PUSH6 0x627A7A723158 KECCAK256 DUP4 PUSH17 0x7C6288080C28666F4B897C2B9052092CE7 SIGNEXTEND PUSH20 0x1F477B9BE851A69538855E6C6578706572696D65 PUSH15 0x74616CF564736F6C63430005110040 ",
+			"sourceMap": "1190:304:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1190:304:3;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fdfea365627a7a7231582083707c6288080c28666f4b897c2b9052092ce70b731f477b9be851a69538855e6c6578706572696d656e74616cf564736f6c63430005110040",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG3 PUSH6 0x627A7A723158 KECCAK256 DUP4 PUSH17 0x7C6288080C28666F4B897C2B9052092CE7 SIGNEXTEND PUSH20 0x1F477B9BE851A69538855E6C6578706572696D65 PUSH15 0x74616CF564736F6C63430005110040 ",
+			"sourceMap": "1190:304:3:-;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "15200",
+				"executionCost": "69",
+				"totalCost": "15269"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

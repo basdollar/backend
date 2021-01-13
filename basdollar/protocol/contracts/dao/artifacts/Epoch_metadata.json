@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/dao/State.sol": "Epoch"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
+				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9",
+			"urls": [
+				"bzz-raw://59fd025151435da35faa8093a5c7a17de02de9d08ad27275c5cdf05050820d91",
+				"dweb:/ipfs/QmQMvwEcPhoRXzbXyrdoeRtvLoifUW9Qh7Luho7bmUPRkc"
+			]
+		},
+		"@pancakeswap/v2-core/contracts/interfaces/IPancakeswapPair.sol": {
+			"keccak256": "0x4dbc447aacc180c56ca52006cf0a56de7d59045eb5b574f64729688e4756cdc9",
+			"urls": [
+				"bzz-raw://8a350df7476270c324f24d8e80ad751486a1d41adb7b8ccde6d2c809cd018825",
+				"dweb:/ipfs/QmSxGcu5hqqV7DSCiBaRo7V2QC6L5sxZ2f1egT3i6BMfXs"
+			]
+		},
+		"localhost/contracts/dao/State.sol": {
+			"keccak256": "0x46a916721b71ecde2bb34ab09b72da64f51d9b8d8429a38d5a5f3dcd931cd66e",
+			"urls": [
+				"bzz-raw://72faf2e509f97d63e9d0f7276cb810c8e410dae18c760230752bf1b3fdf5f307",
+				"dweb:/ipfs/QmTTLN9Mviyg8a7qPh9T1BxAJGCFh3P6xm5s4bmtFPy787"
+			]
+		},
+		"localhost/contracts/external/Decimal.sol": {
+			"keccak256": "0x55f2c3ea7960448502924b1ddb33db82f850021ef54d2dd40a4c9b9e82ed1058",
+			"urls": [
+				"bzz-raw://ae89c47c44ae1f6f1c6947bb9b66f1eb4c39786f7b83ed4d1ea3acdbc88a0123",
+				"dweb:/ipfs/QmSxmQk2mCuNuo6DDpdCjeftxsjfUJipMRHR3h1hpcNFam"
+			]
+		},
+		"localhost/contracts/oracle/IOracle.sol": {
+			"keccak256": "0xb83b9cbc339a074de1f469936b366f4c71e20c3589fee2c5f61122e5241c8088",
+			"urls": [
+				"bzz-raw://fd231ac715973789b29a8174f6f652ec731e88505bf2c08859bdaec5e59b3608",
+				"dweb:/ipfs/QmU7RedrumfwPY7wVspeCZXFwUYnjFvBZdDJdSkX4ev4gu"
+			]
+		},
+		"localhost/contracts/token/IDollar.sol": {
+			"keccak256": "0x581e0046af96c783a6800b9add0cd91e05ebcf60aaa89c95a23befc30febd209",
+			"urls": [
+				"bzz-raw://e0ad2a9b626b2c3fa013e1263294d76acb0ae294cc372aaef584933a52c58e70",
+				"dweb:/ipfs/QmRmqZ1ZvxCj821tN56HdwJj4cGK663vF1ioPXaXFYVSNx"
+			]
+		}
+	},
+	"version": 1
+}

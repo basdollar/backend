@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/external/LibEIP712.sol": "LibEIP712"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/external/LibEIP712.sol": {
+			"keccak256": "0xf4d7a88da8be529a53feaa65d110288b003763df23a02c8f9e91058fe653c638",
+			"urls": [
+				"bzz-raw://4c252f8983678ed15c03b59f9579959591d1fb7a0772b4057277fe6977b2ce7b",
+				"dweb:/ipfs/QmNTXwdPULiUBZkWa8Dj5aJ3DDhrmBpMqaFMShAdACYbSj"
+			]
+		}
+	},
+	"version": 1
+}

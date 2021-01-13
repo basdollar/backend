@@ -1,0 +1,39 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "dYdX * Stringifies parameters to pretty-print revert messages. Costs more gas than regular require()",
+			"methods": {},
+			"title": "Require"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/external/Require.sol": "Require"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/external/Require.sol": {
+			"keccak256": "0x3b8edcc166414f1c408972bf8130893a601a29eb87454621b187e754a8372922",
+			"urls": [
+				"bzz-raw://3a900707d5229254a1f021438d32adf87cf37a251cc0eea926e24cccad3ecf14",
+				"dweb:/ipfs/QmWda2qiJEUnjftpqhxR1cZPJXqjkHJwFhLpXurod3uwnW"
+			]
+		}
+	},
+	"version": 1
+}

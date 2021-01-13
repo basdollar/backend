@@ -1,0 +1,720 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "dollar",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "cakelp",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Bond",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Claim",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "lessBusd",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newCakelp",
+						"type": "uint256"
+					}
+				],
+				"name": "Provide",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newClaimable",
+						"type": "uint256"
+					}
+				],
+				"name": "Unbond",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdraw",
+				"type": "event"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfBonded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfClaimable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfPhantom",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfRewarded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfStaged",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "bond",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "busd",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cakelp",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "claim",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "dao",
+				"outputs": [
+					{
+						"internalType": "contract IDAO",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "dollar",
+				"outputs": [
+					{
+						"internalType": "contract IDollar",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "emergencyPause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "emergencyWithdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "fluidUntil",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "provide",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "statusOf",
+				"outputs": [
+					{
+						"internalType": "enum PoolAccount.Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalBonded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalClaimable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalPhantom",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalRewarded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalStaged",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "unbond",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"balanceOfStaged(address)": {
+					"notice": "Account"
+				},
+				"busd()": {
+					"notice": "Global"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/oracle/Pool.sol": "Pool"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
+				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9",
+			"urls": [
+				"bzz-raw://59fd025151435da35faa8093a5c7a17de02de9d08ad27275c5cdf05050820d91",
+				"dweb:/ipfs/QmQMvwEcPhoRXzbXyrdoeRtvLoifUW9Qh7Luho7bmUPRkc"
+			]
+		},
+		"@pancakeswap/v2-core/contracts/interfaces/IPancakeswapPair.sol": {
+			"keccak256": "0x4dbc447aacc180c56ca52006cf0a56de7d59045eb5b574f64729688e4756cdc9",
+			"urls": [
+				"bzz-raw://8a350df7476270c324f24d8e80ad751486a1d41adb7b8ccde6d2c809cd018825",
+				"dweb:/ipfs/QmSxGcu5hqqV7DSCiBaRo7V2QC6L5sxZ2f1egT3i6BMfXs"
+			]
+		},
+		"localhost/contracts/Constants.sol": {
+			"keccak256": "0x65101d85b9e360841a5bab4eebabfd20cabd70737a88d17e48bea157802f7db5",
+			"urls": [
+				"bzz-raw://7d366d05e72560711844af91e280e6bcceb63bfa4d63d80399e322ed2e53aeb7",
+				"dweb:/ipfs/QmZq8AQ62GzxhxrEGzoYThYVyVURp2ncXgkpRerWxnXwBh"
+			]
+		},
+		"localhost/contracts/external/Decimal.sol": {
+			"keccak256": "0x55f2c3ea7960448502924b1ddb33db82f850021ef54d2dd40a4c9b9e82ed1058",
+			"urls": [
+				"bzz-raw://ae89c47c44ae1f6f1c6947bb9b66f1eb4c39786f7b83ed4d1ea3acdbc88a0123",
+				"dweb:/ipfs/QmSxmQk2mCuNuo6DDpdCjeftxsjfUJipMRHR3h1hpcNFam"
+			]
+		},
+		"localhost/contracts/external/PancakeswapLibrary.sol": {
+			"keccak256": "0x2a789415ec9fcec8ae9d31a4b66ec13d8f3971d79a1c4425a451eb81f7281888",
+			"urls": [
+				"bzz-raw://9bee75feb36504a769cc159afab944e0fc030977a9387135b3a8f10f442a8d66",
+				"dweb:/ipfs/QmUKm6jpn3JWaJujJQEPV4BH7TCt5cHtzPe3r97Cc8uTQj"
+			]
+		},
+		"localhost/contracts/external/Require.sol": {
+			"keccak256": "0x3b8edcc166414f1c408972bf8130893a601a29eb87454621b187e754a8372922",
+			"urls": [
+				"bzz-raw://3a900707d5229254a1f021438d32adf87cf37a251cc0eea926e24cccad3ecf14",
+				"dweb:/ipfs/QmWda2qiJEUnjftpqhxR1cZPJXqjkHJwFhLpXurod3uwnW"
+			]
+		},
+		"localhost/contracts/oracle/IBUSD.sol": {
+			"keccak256": "0xf90cf9b4edfcf8fb7cb6a0fd433c2750488ece9ad6140352b99152b5db472f9e",
+			"urls": [
+				"bzz-raw://fea61d930df5d4a485263dbca5a466facad4f38c2e4000fb81b2a1bc1c591259",
+				"dweb:/ipfs/QmXFuVcGYyhXUyMMhqMBwossAUUv5e76nxMXpYPjKCcjdK"
+			]
+		},
+		"localhost/contracts/oracle/IDAO.sol": {
+			"keccak256": "0x45ee336af6aa425abe541ce706944d38b869c018bed6ec401e165cb629f589b3",
+			"urls": [
+				"bzz-raw://3535dcb906566a41e6e581b920189525fc684540ff8767c43135cf0a896af484",
+				"dweb:/ipfs/Qmf6F7MXFsvZCs7f9bLuCjvVMV8fwUf4zB5dzy5RGSnU7N"
+			]
+		},
+		"localhost/contracts/oracle/Liquidity.sol": {
+			"keccak256": "0x28683d1defdc23ccee6e00caa687ed247a6db3377f4834cfa409ef0d16a88f76",
+			"urls": [
+				"bzz-raw://a371ee45c82b23f5cfe38212735bbb7a41470a1c54fc2e1baa203ef2a81ea40a",
+				"dweb:/ipfs/QmcaM25FoKhp4Y9VqS3xvTpfHKYQCsg4h2BLLEURmw4ra3"
+			]
+		},
+		"localhost/contracts/oracle/Pool.sol": {
+			"keccak256": "0xbe0f098147941390d05fafc64f701d705cabcec0aac44e547cb8790504c17ab2",
+			"urls": [
+				"bzz-raw://f856836de3cb974411346d7c7b45a1dcbeaba93420d445532c26dfedc55e556a",
+				"dweb:/ipfs/QmSU6Jy1DMF6gEkBaXS4G2WTbYGKpmEwBi7ZMxPGzJ3cen"
+			]
+		},
+		"localhost/contracts/oracle/PoolGetters.sol": {
+			"keccak256": "0x01c09c43a90689fb4438a0d8b63ddbf4fd7c34c6f577318243c72065ce28a02d",
+			"urls": [
+				"bzz-raw://2dbca02ac42435ac91d55175fa5f857a89cd5d8e570daa550dfd196851ba0439",
+				"dweb:/ipfs/QmVXg1AzzQwDiojkteC88RNpqfbHQBV8cSP4NH2N5UahAU"
+			]
+		},
+		"localhost/contracts/oracle/PoolSetters.sol": {
+			"keccak256": "0x70f8a88a3ede97ea19c297603c0a9b7d582d4764a6f9b8a44d63e5c64205e9e9",
+			"urls": [
+				"bzz-raw://5bb1d29770df5ab27ec4746b448be735ea54263ad419ab3a9fcec0ff894ccdc2",
+				"dweb:/ipfs/QmSrv5fQJtpMQy1FrC7HvKfnBEqKgjEuJEhHzemZ786jQp"
+			]
+		},
+		"localhost/contracts/oracle/PoolState.sol": {
+			"keccak256": "0x9fb88aed53c312d9d2ea155246e7372f59c43b31fd0f24ce4bfeab8937c63c2a",
+			"urls": [
+				"bzz-raw://f3a24d1ed62b7d51d8b8c3913a8d3d80d78dfd8ceed0ef18716644f6976ff6eb",
+				"dweb:/ipfs/QmcJGiZc3YWCYW2iv29Ca2yfme4cHsDPoEzswM2A4ZBrY9"
+			]
+		},
+		"localhost/contracts/token/IDollar.sol": {
+			"keccak256": "0x581e0046af96c783a6800b9add0cd91e05ebcf60aaa89c95a23befc30febd209",
+			"urls": [
+				"bzz-raw://e0ad2a9b626b2c3fa013e1263294d76acb0ae294cc372aaef584933a52c58e70",
+				"dweb:/ipfs/QmRmqZ1ZvxCj821tN56HdwJj4cGK663vF1ioPXaXFYVSNx"
+			]
+		}
+	},
+	"version": 1
+}

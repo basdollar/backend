@@ -1,0 +1,55 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50604c80601d6000396000f3fe6080604052600080fdfea365627a7a72315820a73d1a6a4ca5804d730cf7b92ad612ea69a49c12faa4b101b1f1eda1507922b06c6578706572696d656e74616cf564736f6c63430005110040",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4C DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG3 PUSH6 0x627A7A723158 KECCAK256 0xA7 RETURNDATASIZE BYTE PUSH11 0x4CA5804D730CF7B92AD612 0xEA PUSH10 0xA49C12FAA4B101B1F1ED LOG1 POP PUSH26 0x22B06C6578706572696D656E74616CF564736F6C634300051100 BLOCKHASH ",
+			"sourceMap": "1781:556:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1781:556:3;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fdfea365627a7a72315820a73d1a6a4ca5804d730cf7b92ad612ea69a49c12faa4b101b1f1eda1507922b06c6578706572696d656e74616cf564736f6c63430005110040",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG3 PUSH6 0x627A7A723158 KECCAK256 0xA7 RETURNDATASIZE BYTE PUSH11 0x4CA5804D730CF7B92AD612 0xEA PUSH10 0xA49C12FAA4B101B1F1ED LOG1 POP PUSH26 0x22B06C6578706572696D656E74616CF564736F6C634300051100 BLOCKHASH ",
+			"sourceMap": "1781:556:3:-;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "15200",
+				"executionCost": "69",
+				"totalCost": "15269"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

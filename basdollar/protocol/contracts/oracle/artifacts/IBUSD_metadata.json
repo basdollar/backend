@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account",
+						"type": "address"
+					}
+				],
+				"name": "isBlacklisted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/oracle/IBUSD.sol": "IBUSD"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/oracle/IBUSD.sol": {
+			"keccak256": "0xf90cf9b4edfcf8fb7cb6a0fd433c2750488ece9ad6140352b99152b5db472f9e",
+			"urls": [
+				"bzz-raw://fea61d930df5d4a485263dbca5a466facad4f38c2e4000fb81b2a1bc1c591259",
+				"dweb:/ipfs/QmXFuVcGYyhXUyMMhqMBwossAUUv5e76nxMXpYPjKCcjdK"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/dao/Curve.sol": "Curve"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
+				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+			]
+		},
+		"localhost/contracts/Constants.sol": {
+			"keccak256": "0x65101d85b9e360841a5bab4eebabfd20cabd70737a88d17e48bea157802f7db5",
+			"urls": [
+				"bzz-raw://7d366d05e72560711844af91e280e6bcceb63bfa4d63d80399e322ed2e53aeb7",
+				"dweb:/ipfs/QmZq8AQ62GzxhxrEGzoYThYVyVURp2ncXgkpRerWxnXwBh"
+			]
+		},
+		"localhost/contracts/dao/Curve.sol": {
+			"keccak256": "0x01b061d84336d6d7c8b9d08252067e4cdfe34e1ed236126179b699da90531455",
+			"urls": [
+				"bzz-raw://e481ca1a643be2f481f0c978dbbe4b1124361f6021c01036a96e0ead3e5a9062",
+				"dweb:/ipfs/QmQZ19ZycwxKeZKeHoFZ1riSheUSEdDHCC7hPteE4LBgwb"
+			]
+		},
+		"localhost/contracts/external/Decimal.sol": {
+			"keccak256": "0x55f2c3ea7960448502924b1ddb33db82f850021ef54d2dd40a4c9b9e82ed1058",
+			"urls": [
+				"bzz-raw://ae89c47c44ae1f6f1c6947bb9b66f1eb4c39786f7b83ed4d1ea3acdbc88a0123",
+				"dweb:/ipfs/QmSxmQk2mCuNuo6DDpdCjeftxsjfUJipMRHR3h1hpcNFam"
+			]
+		}
+	},
+	"version": 1
+}

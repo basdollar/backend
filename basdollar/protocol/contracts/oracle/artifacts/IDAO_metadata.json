@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "epoch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/oracle/IDAO.sol": "IDAO"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/oracle/IDAO.sol": {
+			"keccak256": "0x45ee336af6aa425abe541ce706944d38b869c018bed6ec401e165cb629f589b3",
+			"urls": [
+				"bzz-raw://3535dcb906566a41e6e581b920189525fc684540ff8767c43135cf0a896af484",
+				"dweb:/ipfs/Qmf6F7MXFsvZCs7f9bLuCjvVMV8fwUf4zB5dzy5RGSnU7N"
+			]
+		}
+	},
+	"version": 1
+}

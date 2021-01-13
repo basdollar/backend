@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/oracle/poolflat.sol": "State"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/oracle/poolflat.sol": {
+			"keccak256": "0x678b99a3e608b9a9b0129a37387480eac6d98bfe403b62e84e9fa6ded8f5b519",
+			"urls": [
+				"bzz-raw://05effd17fe112cc4d749459d542dc8a498ad8daefe4532b66f57826933d5d290",
+				"dweb:/ipfs/QmaHUPJf3NXNnXGShNpGDNTzMBjXRrEkgNw7mLGvvZfjzF"
+			]
+		}
+	},
+	"version": 1
+}

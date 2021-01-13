@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"name": "Upgraded",
+				"type": "event"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/dao/Root.sol": "Root"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol": {
+			"keccak256": "0x1b37f808dc0a45976ad23aa53908c485a74a4d9fbd03066a5ab399c46436e570",
+			"urls": [
+				"bzz-raw://de04959e1261bbc2ee53a88b98469a888a2f2fa49c07ea87a5d646a8fe438558",
+				"dweb:/ipfs/QmUmYQaNnAMfvbfKLniFLHyBzsH77bCMf9NpNSfndfuqWh"
+			]
+		},
+		"@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol": {
+			"keccak256": "0xd8074ae5fa7ee6384ca8196a896612fb044bbf4ff4b7336d03cd97845000ac21",
+			"urls": [
+				"bzz-raw://3a111e1dc777d80e6c2ad41c6ff2bfb3ae8f61658fd6580ddf9ba9ab0d25a354",
+				"dweb:/ipfs/QmSfwvUqqiownzHeMmUiYkejWs6FXR2KLtHQnSzP6FivTj"
+			]
+		},
+		"@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol": {
+			"keccak256": "0xb02c6349ba01df9902857b6058f92b37f13187775cce9da74f6f28410205445b",
+			"urls": [
+				"bzz-raw://f05434b5110c9de912e001a5dc2b252947f474346cb8ea5ec26ea2efe7143aa7",
+				"dweb:/ipfs/QmbaksVa6vQz926TCHgJniKFuod44QhuGzVFYMtdUgdxba"
+			]
+		},
+		"@openzeppelin/upgrades/contracts/utils/Address.sol": {
+			"keccak256": "0x7be7f8e4c08bc70ff9815e3f11c569f42aa3c447b5bc61fd75fb5cec97f63a9f",
+			"urls": [
+				"bzz-raw://f301a9226d637e1593916ba2de7b0b28c35f2adc3ca8526289fe1eedafa83bc2",
+				"dweb:/ipfs/QmPb991LE8nyvhB4BkX46P1Pan2ijH9tfqWwLAz65VUUKs"
+			]
+		},
+		"localhost/contracts/dao/Root.sol": {
+			"keccak256": "0xa8d957aa5ad22806624394f52aa14024744a702780071dda2a278a1bc478b567",
+			"urls": [
+				"bzz-raw://facb198369cbee267c8ea463c76627066e683fe3af1493185df32d60fa4f24ee",
+				"dweb:/ipfs/QmcmhW5NHomagBZPGEVx6T3NTvVx3PdkMSC5c528TRHHHz"
+			]
+		}
+	},
+	"version": 1
+}
