@@ -1,4 +1,4 @@
-# Dynamic Set Dollar
+# Binance Agile Set Dollar
 
 - shorthand name: `agile set dollar / bas dollar`
 - full name: `Binance Agile Set Dollar`
