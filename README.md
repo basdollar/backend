@@ -6,7 +6,7 @@
 - decimals: `18`
 - icon:
 
-![BASD Logo](https://basd.finance/logo.png)
+![BASD Logo](https://pasteboard.co/JJVi8MT.jpg)
 
 ## contracts
 ### mainnet
